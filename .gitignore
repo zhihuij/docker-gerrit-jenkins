@@ -1,0 +1,16 @@
+postgres/
+jenkins_home/
+
+nginx/*
+!nginx/nginx.conf
+
+mysql/*
+!mysql/etc/
+mysql/etc/*
+!mysql/etc/my.cnf
+
+gerrit/*
+!gerrit/etc/
+gerrit/etc/*
+!gerrit/etc/gerrit.config
+!gerrit/etc/secure.config
