@@ -22,7 +22,7 @@ docker-compose up gerrit
 
 Wait until you see in the output the message `Initialized /var/gerrit` and then the container will exit.
 
-**Note: Maybe you need to change the owner of directory `gerrit` to the user used by the gerrit image (Debian, Mac doesn't need), use `docker run --rm $image_name id $user` to get the uid and gid.**
+**Note: Maybe you need to change the owner of directory `gerrit` to the user used by the gerrit image (Mac doesn't need in my test, Debian NEED), use `docker run --rm $image_name id $user` to get the uid and gid.**
 
 See [Docker Gerrit Guide](https://gerrit.googlesource.com/docker-gerrit/#initialize-gerrit-db-and-git-repositories-with-docker) for complete instructions.
 
