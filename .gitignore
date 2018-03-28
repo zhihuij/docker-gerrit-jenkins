@@ -2,6 +2,7 @@ postgres/
 
 jenkins_home/*
 !jenkins_home/sputnik_config
+!jenkins_home/script
 
 nginx/*
 !nginx/nginx.conf
