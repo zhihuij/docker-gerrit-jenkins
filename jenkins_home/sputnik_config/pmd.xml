@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset>
+  <rule ref="rulesets/java/strictexception.xml/AvoidCatchingGenericException">
+    <priority>5</priority>
+  </rule>
+  <rule ref="rulesets/java/naming.xml/ShortMethodName">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/empty.xml/EmptyCatchBlock">
+    <priority>2</priority>
+    <properties>
+      <property name="allowCommentedBlocks" value="false" />
+    </properties>
+  </rule>
+  <rule ref="rulesets/java/unusedcode.xml/UnusedFormalParameter">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/design.xml/DefaultLabelNotLastInSwitchStmt">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/logging-java.xml/SystemPrintln">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/design.xml/SimplifyBooleanExpressions">
+    <priority>4</priority>
+  </rule>
+  <rule ref="rulesets/java/design.xml/EqualsNull">
+    <priority>2</priority>
+  </rule>
+  <rule ref="rulesets/java/design.xml/CompareObjectsWithEquals">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/design.xml/MissingBreakInSwitch">
+    <priority>5</priority>
+  </rule>
+  <rule ref="rulesets/java/braces.xml/WhileLoopsMustUseBraces">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/design.xml/PreserveStackTrace">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/unusedcode.xml/UnusedLocalVariable">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/naming.xml/PackageCase">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/empty.xml/EmptyIfStmt">
+    <priority>4</priority>
+  </rule>
+  <rule ref="rulesets/java/empty.xml/EmptySwitchStatements">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/naming.xml/AvoidFieldNameMatchingMethodName">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/braces.xml/IfElseStmtsMustUseBraces">
+    <priority>5</priority>
+  </rule>
+  <rule ref="rulesets/java/strictexception.xml/DoNotThrowExceptionInFinally">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/strictexception.xml/AvoidThrowingRawExceptionTypes">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/naming.xml/MethodNamingConventions">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/design.xml/AvoidDeeplyNestedIfStmts">
+    <priority>3</priority>
+    <properties>
+      <property name="problemDepth" value="3" />
+    </properties>
+  </rule>
+  <rule ref="rulesets/java/naming.xml/ClassNamingConventions">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/empty.xml/EmptyFinallyBlock">
+    <priority>4</priority>
+  </rule>
+  <rule ref="rulesets/java/design.xml/CloseResource">
+    <priority>3</priority>
+    <properties>
+      <property name="types" value="Connection,Statement,ResultSet" />
+      <property name="closeTargets" value="close" />
+    </properties>
+  </rule>
+  <rule ref="rulesets/java/controversial.xml/AssignmentInOperand">
+    <priority>5</priority>
+  </rule>
+  <rule ref="rulesets/java/strictexception.xml/AvoidThrowingNullPointerException">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/braces.xml/IfStmtsMustUseBraces">
+    <priority>5</priority>
+  </rule>
+  <rule ref="rulesets/java/basic.xml/UnconditionalIfStatement">
+    <priority>2</priority>
+  </rule>
+  <rule ref="rulesets/java/empty.xml/EmptyWhileStmt">
+    <priority>2</priority>
+  </rule>
+  <rule ref="rulesets/java/strictexception.xml/AvoidCatchingNPE">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/j2ee.xml/DoNotCallSystemExit">
+    <priority>5</priority>
+  </rule>
+  <rule ref="rulesets/java/design.xml/SwitchStmtsShouldHaveDefault">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/empty.xml/EmptyTryBlock">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/logging-java.xml/AvoidPrintStackTrace">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/braces.xml/ForLoopsMustUseBraces">
+    <priority>3</priority>
+  </rule>
+  <rule ref="rulesets/java/strictexception.xml/AvoidCatchingThrowable">
+    <priority>5</priority>
+  </rule>
+  <rule ref="rulesets/java/basic.xml/BrokenNullCheck">
+    <priority>2</priority>
+  </rule>
+  <rule ref="rulesets/java/strictexception.xml/AvoidRethrowingException">
+    <priority>3</priority>
+  </rule>
+</ruleset>
+

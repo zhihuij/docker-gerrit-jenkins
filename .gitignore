@@ -1,5 +1,7 @@
 postgres/
-jenkins_home/
+
+jenkins_home/*
+!jenkins_home/sputnik_config
 
 nginx/*
 !nginx/nginx.conf
