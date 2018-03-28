@@ -39,3 +39,5 @@ docker-compose up -d
 You can access Gerrit at `http://your-configed-server-name/gerrit` and Jenkins in `http://your-configed-server-name/jenkins`.
 
 ## Config Gerrit and Jenkins
+
+See [Gerrit Trigger](https://wiki.jenkins.io/display/JENKINS/Gerrit+Trigger).
