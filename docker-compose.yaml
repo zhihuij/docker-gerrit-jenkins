@@ -45,9 +45,6 @@ services:
 
   # mysql:
   #   image: mysql
-  #   restart: always
-  #   ports:
-  #     - "3306:3306"
   #   environment:
   #     - MYSQL_ROOT_PASSWORD=basecloud@netease
   #     - MYSQL_DATABASE=gerrit_db
@@ -55,8 +52,10 @@ services:
   #     - MYSQL_PASSWORD=basecloud@netease
   #     - MYSQL_ROOT_HOST=%
   #   volumes:
-  #    - ./mysql/data:/var/lib/mysql
-  #    - ./mysql/etc:/etc/mysql/conf.d
+  #     - /etc/timezone:/etc/timezone:ro
+  #     - /etc/localtime:/etc/localtime:ro
+  #     - ./mysql/data:/var/lib/mysql
+  #     - ./mysql/etc:/etc/mysql/conf.d
 
   jenkins:
     image: jenkins/jenkins:lts
