@@ -10,6 +10,8 @@ services:
       - gerrit
       - jenkins
     volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./nginx/log:/var/log/nginx
 
@@ -20,13 +22,15 @@ services:
     depends_on:
       - postgres
     volumes:
-     - ./gerrit/etc:/var/gerrit/etc
-     - ./gerrit/git:/var/gerrit/git
-     - ./gerrit/index:/var/gerrit/index
-     - ./gerrit/cache:/var/gerrit/cache
-     - ./gerrit/plugins:/var/gerrit/plugins
-     - ./gerrit/logs:/var/gerrit/logs
-    # entrypoint: java -jar /var/gerrit/bin/gerrit.war init -d /var/gerrit
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      - ./gerrit/etc:/var/gerrit/etc
+      - ./gerrit/git:/var/gerrit/git
+      - ./gerrit/index:/var/gerrit/index
+      - ./gerrit/cache:/var/gerrit/cache
+      - ./gerrit/plugins:/var/gerrit/plugins
+      - ./gerrit/logs:/var/gerrit/logs
+  #  entrypoint: java -jar /var/gerrit/bin/gerrit.war init -d /var/gerrit
 
   postgres:
     image: postgres:9.6
@@ -35,6 +39,8 @@ services:
       - POSTGRES_PASSWORD=basecloud@netease
       - POSTGRES_DB=gerrit_db
     volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
       - ./postgres:/var/lib/postgresql/data
 
   # mysql:
@@ -57,4 +63,6 @@ services:
     environment:
       - JENKINS_OPTS="--prefix=/jenkins"
     volumes:
-     - ./jenkins_home:/var/jenkins_home
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      - ./jenkins_home:/var/jenkins_home
