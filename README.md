@@ -6,7 +6,7 @@
 
 Add config for SMTP server in [gerrit.config](./gerrit/etc/gerrit.config) at `[sendemail]` section, and the password for your configed email in [secure.config](./gerrit/etc/secure.config) at `[sendemail]` section.
 
-You can change the server name (`review.test.netease.com`) in [nginx.conf](./nginx/nginx.conf) and [gerrit.config](./gerrit/etc/gerrit.config) to your custom server name(`your-configed-server-name`).
+You can change the server name (`review.test.netease.com`) in [docker-compose.yaml](./docker-compose.yaml) and [nginx.conf](./nginx/nginx.conf) and [gerrit.config](./gerrit/etc/gerrit.config) to your custom server name(`your-configed-server-name`).
 
 ### Step-2: Initialize Gerrit DB and Git repositories
 
@@ -22,7 +22,7 @@ docker-compose up gerrit
 
 Wait until you see in the output the message `Initialized /var/gerrit` and then the container will exit.
 
-**Note: Maybe you need to change the owner of directory `gerrit` to the user used by the gerrit image (Mac doesn't need in my test, Debian NEED), use `docker run --rm $image_name id $user` to get the uid and gid.**
+**Note: Maybe you need to change the owner of directory `gerrit` to the user used by the gerrit image in some system (Debian for example), use `docker run --rm $image_name id $user` to get the uid and gid.**
 
 See [Docker Gerrit Guide](https://gerrit.googlesource.com/docker-gerrit/#initialize-gerrit-db-and-git-repositories-with-docker) for complete instructions.
 
@@ -36,7 +36,7 @@ docker-compose up -d
 
 ### Step-4: Access Gerrit and Jenkins
 
-You can access Gerrit at `http://your-configed-server-name/gerrit` and Jenkins in `http://your-configed-server-name/jenkins`.
+You can access Gerrit at `http://your-configed-server-name/gerrit` (or `http://your-configed-server-name/`) and Jenkins in `http://your-configed-server-name/jenkins`.
 
 ## Config Gerrit and Jenkins
 
