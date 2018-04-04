@@ -21,6 +21,8 @@ services:
       - postgres
     depends_on:
       - postgres
+    environment:
+      - CANONICAL_WEB_URL=http://review.test.netease.com/gerrit
     volumes:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
