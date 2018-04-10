@@ -17,3 +17,4 @@ gerrit/*
 gerrit/etc/*
 !gerrit/etc/gerrit.config
 !gerrit/etc/secure.config
+!gerrit/etc/its
