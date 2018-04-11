@@ -18,13 +18,13 @@
 
 /**
  * @param changeNumber
- * @param ownerUsername
+ * @param submitterUsername
  * @param changeUrl
  * @param subject
  * @param formatChangeUrl
  */
 {template .Merged autoescape="strict" kind="text"}
-  Issue solved by [~{$ownerUsername}] with change [{$changeNumber}|{$changeUrl}]:{\n}
+  Change [{$changeNumber}|{$changeUrl}] merged by [~{$submitterUsername}]:{\n}
   {\n}
   {$subject}{\n}
   {\n}
